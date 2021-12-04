@@ -252,7 +252,7 @@ function Question7({ navigation }) {
 function Question8({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor:'darkgrey' }}>
-      <Text  style={styles.text}>Whichvideo game company is published the second installment of 'Far Cry' series?</Text>
+      <Text  style={styles.text}>Which video game company is published the second installment of 'Far Cry' series?</Text>
 
       <View  style={styles.button}>
       <Button color='#10ebca'  
@@ -327,7 +327,9 @@ function Question10({ navigation }) {
 function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' , backgroundColor:'darkgrey'}}>
-  
+     <View style={{paddingBottom:100, width: null,height: null,  }}> 
+        <Image resizeMode="cover" source={require('./source/epic_game_scaled.gif')}  />
+     </View>
       <Text style={styles.text}>Epic gamer quiz</Text>
       <View style={styles.button}>
       <Button color='#10ebca'  
@@ -344,7 +346,10 @@ function HomeScreen({ navigation }) {
 function winscreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>GGWP you gave a right answer to all questions </Text>
+      <Text  style={styles.text}>GGWP you gave a right answer to all questions </Text>
+      <View>
+        <Image source={require('./source/ggwp.gif')}  />
+      </View>
       <View  style={styles.button}>
       <Button  color='#10ebca'
         title="GGWP pró gémer kvíz meister "
@@ -401,7 +406,7 @@ function App() {
 const styles=StyleSheet.create({
 
     text:{
-      fontSize: 20,
+      fontSize: 26,
       color:'#423e3e',
       paddingBottom: 70,
       fontWeight: 'bold',
