@@ -23,7 +23,7 @@ function DetailsScreen() {
   );
 }
 */
-
+//komment
 const values ={
     answer1:'',
     answers:''
